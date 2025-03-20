@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Playwrite+US+Modern+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Playwrite+US+Modern+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Playwrite+US+Modern+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&family=Vast+Shadow&display=swap');
+@import "tailwindcss";
+
+.container-custom {
+    @apply max-w-[90%] md:max-w-[85%] lg:max-w-7xl xl:max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Story Component Styles */
+.story-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.story-card:hover {
+  transform: translateY(-4px);
+}
+
+@theme {
+    --color-primary-background: #1B1B1B;
+    --color-primary-text: #2A2A2A;
+    --color-primary-accent: #D7FC70;
+    --color-primary-accent-hover: #c5ea5e;
+
+    --font-hello: 'hello', sans-serif;
+    --font-lineFont: "Playwrite US Modern Guides", cursive;
+    --font-childlike: "Vast Shadow", serif;
+}
+
+@font-face {
+    font-family: 'hello';
+    src: url('/fonts/hello.otf') format('opentype');
+}
